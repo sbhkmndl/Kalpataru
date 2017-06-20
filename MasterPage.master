@@ -1,0 +1,103 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Old Blog Template - Free CSS Layout</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<!--  Designed by w w w . t e m p l a t e m o . c o m  -->
+<link rel="stylesheet" type="text/css" href="tabcontent.css" />
+<script type="text/javascript" src="tabcontent.js">
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="templatemo_header_panel">
+    	<div id="templatemo_title_section">
+				<h1>KALPATARU</h1>
+                <div style="position: absolute; top: 161px; left: 928px; height: 41px; width: 163px; right: inherit;" 
+                    align="center">
+                    <asp:Panel ID="Panel2" runat="server" 
+                        
+                        
+                        BackImageUrl="~/images/bg img/solid-red-background-colors-backgrounds-for-red-solid-color-backgrounds--overview.jpg" Height="44px" 
+                        style="margin-right: 0px" Width="183px" Visible="False">
+                        <br />
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Medium" 
+                            Text="Label"></asp:Label>
+                        &nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" 
+                            Font-Size="Medium" ForeColor="White" >New Messages</asp:LinkButton>
+                        <br />
+                    </asp:Panel>
+                </div>
+                <div style="position: absolute; top: 135px; left: -29px; height: 90px; width: 163px;">
+                    <asp:Panel ID="Panel1" runat="server" 
+                        BackImageUrl="~/images/header-button-bg.png" Height="72px" 
+                        style="margin-right: 0px" Width="183px">
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server" 
+    Font-Bold="True" Font-Italic="True" Font-Size="Large" ForeColor="White">Login</asp:LinkButton>
+                    </asp:Panel>
+                </div>
+	    </div>
+    </div> <!-- end of templatemo header panel -->
+    
+    <div id="templatemo_menu_panel">
+    	<div id="templatemo_menu_section" align="justify">
+            <ul id="dropmenu">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="#">Teacher</a>
+                <ul>
+                    <li><a href="teacher_tutorial.aspx">Tutorial</a></li>
+                    <li><a href="home_teacher.aspx">Home</a></li>
+                </ul>
+                </li>
+                <li><a href="House_keeper.aspx">House Kipper</a></li>  
+                <li><a href="Technician.aspx">Technision</a></li> 
+                <li><a href="Event_management.aspx">Event Management</a></li>
+                <li><a href="mob_rech.aspx">Mobile Recharge</a></li>
+                <li><a href="#">Emergrncy</a>
+                <ul>
+                    <li><a href="ambulance.aspx">Ambulance</a></li>
+                    <li><a href="goods_delivery.aspx">Home Delivary of any goods</a></li>
+                </ul>
+                </li>
+                <li><a href="aboutus.aspx">About Us</a></li>                     
+            </ul> 
+		    <br />
+            
+		</div>
+    </div> <!-- end of menu -->
+    
+	<%--<div id="templatemo_content_container">
+        <!-- end of right content -->
+	   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div style="height: 435px">
+               </div>
+        </asp:ContentPlaceHolder>
+	    </div>--%> <!-- end of content -->
+     <!-- end of content container -->
+
+    <!-- end of templatemo bottom panel -->
+    <div style="margin-top: 10px">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+    <div align="center" 
+        style="background-color: #000000; color: #FFFFFF; font-size: medium; font-weight: bold; font-style: italic; height: 50px;">
+    
+        <br />
+        <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" 
+            PostBackUrl="~/contactus.aspx">Kalpataru</asp:LinkButton>
+&nbsp;Copyright © 2016</div>
+    </form>
+</body>
+</html>
